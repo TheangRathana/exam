@@ -7,7 +7,7 @@ function App() {
     <Router>
       <Routes>
         <Route exact path='/excel' element={<Excel />}></Route>
-        <Route exact path='/powerpoint' element={<Powerpoint />}></Route>
+        {/* <Route exact path='/powerpoint' element={<Powerpoint />}></Route> */}
       </Routes>
     </Router>
   );
