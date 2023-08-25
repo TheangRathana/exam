@@ -4,7 +4,8 @@ import { AddIcon, CheckCircleIcon } from '@chakra-ui/icons';
 import storage from "../firebaseConfig";
 import { ref, uploadBytesResumable, getDownloadURL } from "firebase/storage";
 import { useToast } from '@chakra-ui/react';
-import PowerpointFile from '../asset/powerpoint2016_slidebasics_practice.pptx';
+// import PowerpointFile from '../asset/powerpoint2016_slidebasics_practice.pptx';
+import PowerpointFile from '../asset/PUC_PowerPoint.pptx';
 import powerpoint2016 from '../asset/powerpoint2016.jpg';
 import powerpoint2016_Bullet from '../asset/powerpoint2016_Bullet.jpg'
 
@@ -26,7 +27,7 @@ export default function Powerpoint() {
             alert("Please upload an image first!");
         } else {
             setProgress('div')
-            const storageRef = ref(storage, `/powerpoint/${file.name}`);
+            const storageRef = ref(storage, `/powerpoint-EHSS-9B/${file.name}`);
 
             const uploadTask = uploadBytesResumable(storageRef, file);
 
@@ -71,7 +72,7 @@ export default function Powerpoint() {
                             <Text>Click download file : </Text>
                             <a
                                 href={PowerpointFile}
-                                download="Example-PDF-document"
+                                download="download-"
                                 target="_blank"
                                 rel="noreferrer"
                             >
@@ -79,7 +80,7 @@ export default function Powerpoint() {
                             </a>
                         </Flex>
                     </ListItem>
-                    <ListItem>
+                    {/* <ListItem>
                         <Flex>
                             <ListIcon as={CheckCircleIcon} color='green.500' mt="3px" />
                             <Text>Design slide ទី 2 ​អោយមានទម្រង់ដូចរូបខាងក្រោម (10pt)</Text>
@@ -128,7 +129,7 @@ export default function Powerpoint() {
                             <ListIcon as={CheckCircleIcon} color='green.500' mt="3px" />
                             <Text>ធ្វើការ save as ដោយដាក់ឈ្មោះរបស់អ្នក!</Text>
                         </Flex>
-                    </ListItem>
+    </ListItem>*/}
                 </List>
             </Box>
 
