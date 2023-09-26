@@ -27,7 +27,7 @@ export default function Powerpoint() {
             alert("Please upload an image first!");
         } else {
             setProgress('div')
-            const storageRef = ref(storage, `/powerpoint-EHSS-9B/${file.name}`);
+            const storageRef = ref(storage, `/powerpoint/${file.name}`);
 
             const uploadTask = uploadBytesResumable(storageRef, file);
 
