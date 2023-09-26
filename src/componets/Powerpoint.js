@@ -63,7 +63,9 @@ export default function Powerpoint() {
     return (
         <Box margin="auto" w="50%" >
             <Box fontFamily="Siemreap" >
-                <Heading mt="25px" textAlign="center" mb="25px">MID-TERM EXAM</Heading>
+                <Heading mt="25px" textAlign="center" mb="25px">Final EXAM</Heading>
+                {/* <Heading mt="25px" textAlign="center" mb="25px">MID-TERM EXAM</Heading> */}
+
                 <List spacing={3} fontSize={18} >
                     <ListItem>
                         <Flex>
