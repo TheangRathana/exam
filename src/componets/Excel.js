@@ -5,7 +5,7 @@ import ExcelInvoice from '../asset/Excel-Invoice.jpg';
 import storage from "../firebaseConfig";
 import { ref, uploadBytesResumable, getDownloadURL } from "firebase/storage";
 import { useToast } from '@chakra-ui/react';
-import Final_Exam from '../asset/Final_Exam.xlsx'
+import Final_Exam from '../asset/Final_Exam.xlsx';
 export default function Excel() {
     const toast = useToast()
     const [file, setFile] = useState("");
