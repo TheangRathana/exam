@@ -4,6 +4,7 @@ import Powerpoint from './componets/Powerpoint';
 import Word from './componets/Word';
 import WordMidTerm from './componets/WordMidTerm';
 import PowerPointMidTerm from './componets/PowerPointMidTerm';
+import PowerPointFinal from './componets/PowerPointFinal';
 
 function App() {
   return (
@@ -11,7 +12,9 @@ function App() {
       <Routes>
         {/* <Route exact path='/excel' element={<Excel />}></Route> */}
         {/* <Route exact path='/powerpoint' element={<Powerpoint />}></Route> */}
-        <Route exact path='/' element={<PowerPointMidTerm />}></Route>
+        <Route exact path='/' element={<PowerPointFinal />}></Route>
+        {/* <Route exact path='/' ></Route> */}
+
 
       </Routes>
     </Router>
