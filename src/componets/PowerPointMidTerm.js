@@ -24,7 +24,7 @@ export default function PowerPointMidTerm() {
             alert("Please upload an image first!");
         } else {
             setProgress('div')
-            const storageRef = ref(storage, `/EHSS9PXT/${file.name}`);
+            const storageRef = ref(storage, `/EHSS7C_Final/${file.name}`);
 
             const uploadTask = uploadBytesResumable(storageRef, file);
 
